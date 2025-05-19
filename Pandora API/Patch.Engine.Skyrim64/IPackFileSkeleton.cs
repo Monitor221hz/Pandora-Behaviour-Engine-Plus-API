@@ -1,5 +1,4 @@
 ﻿using HKX2E;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Pandora.API.Patch.Engine.Skyrim64;

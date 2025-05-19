@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Pandora.API.Patch.Engine.Plugins;
+﻿namespace Pandora.API.Patch.Engine.Plugins;
 public class PluginInfo : IPluginInfo
 {
 	public string Name { get; set; }

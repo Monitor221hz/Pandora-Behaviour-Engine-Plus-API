@@ -1,5 +1,4 @@
 ﻿using HKX2E;
-using Pandora.API.Patch.IOManagers;
 namespace Pandora.API.Patch.Engine.Skyrim64;
 
 public interface IPackFile

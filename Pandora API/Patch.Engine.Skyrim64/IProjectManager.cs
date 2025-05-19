@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 namespace Pandora.API.Patch.Engine.Skyrim64;
 public interface IProjectManager
 {
+	DirectoryInfo GetOutputDirectory();
 	void GetAnimationInfo(StringBuilder builder);
 	void GetExportInfo(StringBuilder builder);
 	void GetFNISInfo(StringBuilder builder);

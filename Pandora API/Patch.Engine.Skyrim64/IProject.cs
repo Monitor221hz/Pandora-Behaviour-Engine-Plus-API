@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Pandora.API.Patch.Engine.Skyrim64;
+﻿namespace Pandora.API.Patch.Engine.Skyrim64;
 public interface IProject
 {
 	public string Identifier { get; }
