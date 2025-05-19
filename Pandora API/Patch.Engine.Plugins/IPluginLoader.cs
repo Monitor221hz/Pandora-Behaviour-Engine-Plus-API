@@ -1,8 +1,15 @@
-﻿using System.Reflection;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 
 namespace Pandora.Models.Patch.Engine.Plugins;
 
 public interface IPluginLoader
 {
-	Assembly? LoadPlugin(DirectoryInfo directory);
+	public Assembly? LoadPlugin(DirectoryInfo directory);
+
+	public bool TryLoadPlugin(DirectoryInfo directory,[NotNullWhen(true)] out Assembly? plugin)
+	{
+		plugin = LoadPlugin(directory); 
+		return plugin != null;
+	}
 }
