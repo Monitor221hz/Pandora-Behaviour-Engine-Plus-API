@@ -2,12 +2,12 @@
 
 public interface IClipMotionDataBlock
 {
-	string ClipID { get; }
+	string ClipID { get; set; }
 	float Duration { get; }
 	int NumRotations { get; }
 	int NumTranslations { get; }
-	List<string> Rotations { get; }
-	List<string> Translations { get; }
+	IList<string> Rotations { get; }
+	IList<string> Translations { get; }
 
 	int GetLineCount();
 	string ToString();
