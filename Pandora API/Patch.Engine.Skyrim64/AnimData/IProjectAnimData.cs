@@ -5,7 +5,7 @@ public interface IProjectAnimData
 	public IProjectAnimDataHeader GetHeader();
 
 	public IMotionData? GetBoundMotionData();
-	public List<IClipDataBlock> GetBlocks();
+	public IList<IClipDataBlock> GetBlocks();
 	void AddDummyClipData(string clipName);
 	int GetLineCount();
 	string ToString();
