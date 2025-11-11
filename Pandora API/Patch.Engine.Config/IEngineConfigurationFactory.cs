@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Pandora.API.Patch.Engine.Config;
+
 public interface IEngineConfigurationFactory
 {
     public string Name { get; }

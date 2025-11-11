@@ -9,7 +9,7 @@ public interface IModInfo : IEquatable<IModInfo>
     {
         FNIS,
         Nemesis,
-        Pandora
+        Pandora,
     }
 
     public string Name { get; }

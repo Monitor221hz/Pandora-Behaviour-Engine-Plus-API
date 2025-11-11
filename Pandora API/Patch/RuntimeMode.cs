@@ -2,6 +2,6 @@
 
 public enum RuntimeMode
 {
-	Serial,
-	Parallel
+    Serial,
+    Parallel,
 }

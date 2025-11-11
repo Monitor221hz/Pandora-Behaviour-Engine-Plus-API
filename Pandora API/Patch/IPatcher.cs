@@ -9,8 +9,9 @@ public interface IPatcher
         PreloadFailed = 1 << 1,
         UpdateFailed = 1 << 2,
         LaunchFailed = 1 << 3,
-        Success = ~(PreloadFailed | UpdateFailed | LaunchFailed)
+        Success = ~(PreloadFailed | UpdateFailed | LaunchFailed),
     }
+
     public PatcherFlags Flags { get; }
     public string GetVersionString();
     public Version GetVersion();

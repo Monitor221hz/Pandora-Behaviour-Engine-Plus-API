@@ -2,6 +2,6 @@
 
 public enum RunOrder
 {
-	PreLaunch,
-	PostLaunch
+    PreLaunch,
+    PostLaunch,
 }

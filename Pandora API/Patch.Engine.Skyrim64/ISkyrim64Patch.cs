@@ -2,7 +2,7 @@
 
 public interface ISkyrim64Patch
 {
-	public RuntimeMode Mode { get; }
-	public RunOrder Order { get; }
-	public void Run(IProjectManager projectManager);
+    public RuntimeMode Mode { get; }
+    public RunOrder Order { get; }
+    public void Run(IProjectManager projectManager);
 }
