@@ -1,14 +1,16 @@
 ﻿using HKX2E;
 
-namespace Pandora.API.Patch.Engine.Skyrim64;
+namespace Pandora.API.Patch.Skyrim64;
 
-public interface IPackFileCharacter
+public interface IPackFileCharacter : IPackFile, IEquatable<IPackFileCharacter>
 {
+    IList<string> AnimationNames { get; }
     string BehaviorFileName { get; }
     hkbCharacterData Data { get; set; }
     uint InitialAnimationCount { get; }
     uint NewAnimationCount { get; }
     string SkeletonFileName { get; }
+    object UniqueAnimationLock { get; set; }
     hkbCharacterStringData StringData { get; set; }
-    public bool AddUniqueAnimation(string name);
+    bool AddUniqueAnimation(string name);
 }

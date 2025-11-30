@@ -1,4 +1,4 @@
-﻿namespace Pandora.API.Patch.Engine.Skyrim64;
+﻿namespace Pandora.API.Patch.Skyrim64;
 
 public interface ISkyrim64Patch
 {

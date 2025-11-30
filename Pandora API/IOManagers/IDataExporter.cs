@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Pandora.API.Patch.IOManagers;
+﻿namespace Pandora.API.Patch.IOManagers;
 
 public interface IDataExporter<T>
 {
