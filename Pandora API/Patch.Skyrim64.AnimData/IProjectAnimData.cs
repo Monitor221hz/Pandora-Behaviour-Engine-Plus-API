@@ -1,10 +1,13 @@
-﻿namespace Pandora.API.Patch.Skyrim64.AnimData;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Pandora.API.Patch.Skyrim64.AnimData;
 
 public interface IProjectAnimData
 {
-    public IProjectAnimDataHeader Header { get; }
-    public IMotionData? BoundMotionDataProject { get; set; }
-    public IList<IClipDataBlock> Blocks { get; }
+    IMotionData? BoundMotionDataProject { get; set; }
+    IProjectAnimDataHeader Header { get; }
+    void AddClipData(IClipDataBlock dataBlock);
+    void AddClipData(IClipDataBlock dataBlock, IClipMotionDataBlock motionDataBlock);
     void AddDummyClipData(string clipName);
     int GetLineCount();
     string ToString();

@@ -32,7 +32,6 @@ public interface IPackFile : IEquatable<IPackFile>
     void BuildClassLookup();
     bool Equals(object? obj);
     XElement GetFirstNodeOfClass(string className);
-    int GetHashCode();
     FileInfo GetOutputHandle(DirectoryInfo exportDirectory);
     T GetPushedObjectAs<T>(string name)
         where T : class, IHavokObject;

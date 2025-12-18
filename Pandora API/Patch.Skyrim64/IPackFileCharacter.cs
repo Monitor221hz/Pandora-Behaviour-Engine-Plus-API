@@ -10,7 +10,8 @@ public interface IPackFileCharacter : IPackFile, IEquatable<IPackFileCharacter>
     uint InitialAnimationCount { get; }
     uint NewAnimationCount { get; }
     string SkeletonFileName { get; }
-    object UniqueAnimationLock { get; set; }
     hkbCharacterStringData StringData { get; set; }
     bool AddUniqueAnimation(string name);
+    object GetUniqueAnimationLock();
+    object AttachUniqueAnimationLock(IPackFileCharacter character);
 }
