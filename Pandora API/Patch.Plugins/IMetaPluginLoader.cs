@@ -1,8 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
-using Pandora.API.Patch.Engine.Plugins;
 
-namespace Pandora.Models.Patch.Engine.Plugins;
+namespace Pandora.API.Patch.Plugins;
 
 public interface IMetaPluginLoader
 {

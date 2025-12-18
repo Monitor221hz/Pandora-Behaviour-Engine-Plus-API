@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
-namespace Pandora.Models.Patch.Engine.Plugins;
+namespace Pandora.API.Patch.Plugins;
 
 public interface IPluginLoader
 {

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Pandora.API.Patch.IOManagers;
+﻿namespace Pandora.API.Patch.IOManagers;
 
 public interface IMetaDataExporter<T> : IDataExporter<T>
 {

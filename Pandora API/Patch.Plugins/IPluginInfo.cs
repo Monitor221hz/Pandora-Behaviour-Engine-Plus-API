@@ -1,4 +1,4 @@
-﻿namespace Pandora.API.Patch.Engine.Plugins;
+﻿namespace Pandora.API.Patch.Plugins;
 
 /// <summary>
 /// UNSAFE - DO NOT USE

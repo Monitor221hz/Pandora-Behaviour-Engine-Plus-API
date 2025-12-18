@@ -1,4 +1,4 @@
-﻿namespace Pandora.API.Patch.Engine.Skyrim64.AnimData;
+﻿namespace Pandora.API.Patch.Skyrim64.AnimData;
 
 public interface IClipMotionDataBlock
 {

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Pandora.API.Patch.Engine.Config;
 
-namespace Pandora.API.Patch.Engine.Config;
+namespace Pandora.API.Patch.Config;
 
 public interface IEngineConfigurationFactory
 {
