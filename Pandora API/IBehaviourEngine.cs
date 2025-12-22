@@ -8,11 +8,8 @@ namespace Pandora.API;
 
 public interface IBehaviourEngine
 {
-    public DirectoryInfo OutputPath { get; }
     IEngineConfiguration Configuration { get; }
     string GetMessages(bool success);
     Task<bool> LaunchAsync(List<IModInfo> mods);
     Task PreloadAsync();
-    IBehaviourEngine SetConfiguration(IEngineConfiguration? configuration);
-    IBehaviourEngine SetOutputPath(DirectoryInfo outputPath);
 }
