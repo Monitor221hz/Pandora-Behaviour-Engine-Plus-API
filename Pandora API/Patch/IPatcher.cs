@@ -21,6 +21,4 @@ public interface IPatcher
     public string GetFailureMessages();
     public Task<bool> UpdateAsync();
     public Task<bool> RunAsync();
-    public void SetOutputPath(DirectoryInfo directoryInfo);
-    public void SetOutputPath(string outputPath) => SetOutputPath(new DirectoryInfo(outputPath));
 }

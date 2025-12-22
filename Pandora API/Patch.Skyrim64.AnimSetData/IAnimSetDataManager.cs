@@ -9,6 +9,5 @@ public interface IAnimSetDataManager
     FileInfo OutputAnimSetDataSingleFile { get; }
     FileInfo TemplateAnimSetDataSingleFile { get; }
     void MergeAnimSetDataSingleFile();
-    void SetOutputPath(DirectoryInfo outputMeshFolder);
     bool SplitAnimSetDataSingleFile();
 }

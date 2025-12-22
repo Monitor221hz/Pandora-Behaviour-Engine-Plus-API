@@ -8,12 +8,11 @@ namespace Pandora.API.Patch.Skyrim64.AnimData;
 
 public interface IAnimDataManager
 {
-	int NumClipIDs { get; }
-	FileInfo OutputAnimDataSingleFile { get; }
-	FileInfo TemplateAnimDataSingleFile { get; }
+    int NumClipIDs { get; }
+    FileInfo OutputAnimDataSingleFile { get; }
+    FileInfo TemplateAnimDataSingleFile { get; }
 
-	int GetNextValidID();
-	void MergeAnimDataSingleFile();
-	void SetOutputPath(DirectoryInfo outputMeshFolder);
-	void SplitAnimDataSingleFile(IProjectManager projectManager);
+    int GetNextValidID();
+    void MergeAnimDataSingleFile();
+    void SplitAnimDataSingleFile(IProjectManager projectManager);
 }

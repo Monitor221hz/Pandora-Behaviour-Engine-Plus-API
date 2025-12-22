@@ -29,5 +29,4 @@ public interface IPatchAssembler
     Task MergeAllAnimationDataAsync();
     Task QueueNativePatchesAsync();
     Task SaveMetaDataAsync();
-    void SetOutputPath(DirectoryInfo baseOutputDirectory);
 }

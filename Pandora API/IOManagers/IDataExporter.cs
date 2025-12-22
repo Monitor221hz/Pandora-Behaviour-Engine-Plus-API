@@ -2,7 +2,7 @@
 
 public interface IDataExporter<T>
 {
-    public DirectoryInfo ExportDirectory { get; set; }
+    public DirectoryInfo GetExportDirectory();
     public bool Export(T obj);
     public T Import(FileInfo file);
 

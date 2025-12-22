@@ -24,7 +24,6 @@ public interface IProjectManager
     IProject LookupProject(string name);
     bool ProjectExists(string name);
     bool ProjectLoaded(string name);
-    void SetOutputPath(DirectoryInfo baseDirectory);
     bool TryActivatePackFile(IPackFile packFile);
     bool TryActivatePackFilePriority(string name, IProject project, out IPackFile? packFile);
     bool TryActivatePackFilePriority(string name, out IPackFile? packFile);
