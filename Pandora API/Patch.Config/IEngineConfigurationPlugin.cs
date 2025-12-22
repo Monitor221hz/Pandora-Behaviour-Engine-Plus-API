@@ -8,7 +8,7 @@ public interface IEngineConfigurationPlugin
         HidePatches = 1,
     }
 
-    public string DisplayName { get; set; }
+    public string DisplayName { get; }
     public string MenuPath { get; }
     public IEngineConfigurationFactory Factory { get; }
 }
