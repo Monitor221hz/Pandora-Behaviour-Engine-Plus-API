@@ -14,7 +14,7 @@ public interface IPackFileEditor
     static abstract bool InsertText(IXMap xmap, string path, string markerValue, string newValue);
     static abstract string PushElement(IXMap xmap, string path, XElement element);
     static abstract XElement RemoveElement(IXMap xmap, string path);
-    static abstract void RemoveText(IXMap xmap, string path, string value);
+    static abstract void RemoveText(IXMap xmap, string path, string value, uint findFrom);
     static abstract XElement ReplaceElement(IXMap xmap, string path, XElement element);
     static abstract bool ReplaceText(
         IXMap xmap,
