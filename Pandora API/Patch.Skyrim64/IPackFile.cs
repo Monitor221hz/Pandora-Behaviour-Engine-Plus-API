@@ -13,7 +13,6 @@ public interface IPackFile : IEquatable<IPackFile>
     MetaPackFileDeserializer BinaryDeserializer { get; }
     hkRootLevelContainer Container { get; }
     IPackFileDispatcher Dispatcher { get; }
-    IPackFileEditor Editor { get; }
     bool ExportSuccess { get; }
     IEnumerable<XElement> IndexedElements { get; }
     FileInfo InputHandle { get; }
