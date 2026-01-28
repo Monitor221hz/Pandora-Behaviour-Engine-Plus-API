@@ -6,5 +6,5 @@ public interface IEngineConfiguration
 
     string Description { get; }
 
-    public IPatcher Patcher { get; }
+    public Type PatcherType { get; }
 }
