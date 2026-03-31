@@ -1,6 +1,7 @@
 ﻿// SPDX-License-Identifier: GPL-3.0-or-later
 // Copyright (C) 2023-2025 Pandora Behaviour Engine Contributors
 
+using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
 using Pandora.API.Patch.Skyrim64.AnimData;
 
@@ -8,6 +9,7 @@ namespace Pandora.API.Patch.Skyrim64;
 
 public interface IProject
 {
+    ConcurrentBag<AlternateAnimation> AlternateAnimations { get; set; }
     IProjectAnimData? AnimData { get; set; }
     IPackFileGraph BehaviorFile { get; }
     IPackFileCharacter CharacterPackFile { get; }
