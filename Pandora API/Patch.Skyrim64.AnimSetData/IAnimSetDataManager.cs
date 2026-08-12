@@ -5,9 +5,8 @@ namespace Pandora.API.Patch.Skyrim64.AnimSetData;
 
 public interface IAnimSetDataManager
 {
-    Dictionary<string, IProjectAnimSetData> AnimSetDataMap { get; }
     FileInfo OutputAnimSetDataSingleFile { get; }
     FileInfo TemplateAnimSetDataSingleFile { get; }
     void MergeAnimSetDataSingleFile();
-    bool SplitAnimSetDataSingleFile();
+    bool SplitAnimSetDataSingleFile(IProjectManager projectManager);
 }

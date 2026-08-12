@@ -4,6 +4,7 @@
 using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
 using Pandora.API.Patch.Skyrim64.AnimData;
+using Pandora.API.Patch.Skyrim64.AnimSetData;
 
 namespace Pandora.API.Patch.Skyrim64;
 
@@ -11,6 +12,7 @@ public interface IProject
 {
     ConcurrentBag<AlternateAnimation> AlternateAnimations { get; set; }
     IProjectAnimData? AnimData { get; set; }
+    IProjectAnimSetData? AnimSetData { get; set; }
     IPackFileGraph BehaviorFile { get; }
     IPackFileCharacter CharacterPackFile { get; }
     string Identifier { get; }
