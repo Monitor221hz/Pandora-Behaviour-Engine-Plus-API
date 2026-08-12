@@ -14,7 +14,10 @@ public interface IFNISAnimation
     public int Hash { get; }
     public IFNISAnimation? NextAnimation { get; set; }
     public FNISAnimType TemplateType { get; }
-    public void BuildAnimation(IProject project, IProjectManager projectManager);
+    public void BuildAnimation(
+        DirectoryInfo templateFolder,
+        IFNISAnimationListBuildContext context
+    );
     public bool BuildBehavior(IFNISAnimationListBuildContext buildContext);
     public void BuildFlags(
         IFNISAnimationListBuildContext buildContext,
